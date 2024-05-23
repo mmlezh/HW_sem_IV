@@ -1,0 +1,4 @@
+/home/jogy/Загрузки/final_task3/final_task3/build/CMakeFiles/server.dir
+/home/jogy/Загрузки/final_task3/final_task3/build/CMakeFiles/client.dir
+/home/jogy/Загрузки/final_task3/final_task3/build/CMakeFiles/edit_cache.dir
+/home/jogy/Загрузки/final_task3/final_task3/build/CMakeFiles/rebuild_cache.dir

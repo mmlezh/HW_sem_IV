@@ -1,0 +1,51 @@
+\hypertarget{classreg}{}\doxysection{reg Class Reference}
+\label{classreg}\index{reg@{reg}}
+
+
+A class to check the validity of restaurant IDs.  
+
+
+
+
+{\ttfamily \#include $<$reg.\+h$>$}
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{classreg_a25631dc5df51c002c7c7917abaeaf846}{check\+\_\+v}} (std\+::string)
+\begin{DoxyCompactList}\small\item\em A function to check if a string matches the restaurant ID regex pattern. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classreg_ac28386233631f9e19d6aa85eb64754bc}\label{classreg_ac28386233631f9e19d6aa85eb64754bc}} 
+static const std\+::regex \mbox{\hyperlink{classreg_ac28386233631f9e19d6aa85eb64754bc}{id}} \{R\char`\"{}($<$company$>$$<$\mbox{[}A-\/Za-\/z\mbox{]}\{3\}$>$$<$\mbox{[}0-\/9\mbox{]}+$>$)\char`\"{}\}
+\begin{DoxyCompactList}\small\item\em A regular expression used to match valid restaurant IDs. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class to check the validity of restaurant IDs. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classreg_a25631dc5df51c002c7c7917abaeaf846}\label{classreg_a25631dc5df51c002c7c7917abaeaf846}} 
+\index{reg@{reg}!check\_v@{check\_v}}
+\index{check\_v@{check\_v}!reg@{reg}}
+\doxysubsubsection{\texorpdfstring{check\_v()}{check\_v()}}
+{\footnotesize\ttfamily static bool reg\+::check\+\_\+v (\begin{DoxyParamCaption}\item[{std\+::string}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+A function to check if a string matches the restaurant ID regex pattern. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & A string to be checked. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the string matches the regex pattern, false otherwise. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+inc/\mbox{\hyperlink{reg_8h}{reg.\+h}}\end{DoxyCompactItemize}

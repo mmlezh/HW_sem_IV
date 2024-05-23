@@ -1,0 +1,1 @@
+/usr/bin/c++ -rdynamic CMakeFiles/client.dir/src/client.cpp.o CMakeFiles/client.dir/src/restaraunt.cpp.o -o client 

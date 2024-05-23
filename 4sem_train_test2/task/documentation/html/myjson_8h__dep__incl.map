@@ -1,0 +1,6 @@
+<map id="inc/myjson.h" name="inc/myjson.h">
+<area shape="rect" id="node1" title="Contains the definition of the myjson class for handling JSON data." alt="" coords="143,5,248,32"/>
+<area shape="rect" id="node2" href="$main_8cpp.html" title="Main file for offline usage." alt="" coords="5,80,111,107"/>
+<area shape="rect" id="node3" href="$myjson_8cpp.html" title="Realization of myjson class." alt="" coords="135,80,255,107"/>
+<area shape="rect" id="node4" href="$server_8cpp.html" title="Server realisation." alt="" coords="279,80,391,107"/>
+</map>

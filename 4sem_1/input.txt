@@ -1,0 +1,96 @@
+The goals of this book
+There are a number of possible introductions to the field of algebraic geome-
+try: Riemann surfaces; complex geometry; the theory of varieties; a nonrigorous
+examples-based introduction; algebraic geometry for number theorists; an abstract
+functorial approach; and more. All have their place. Different approaches suit dif-
+ferent students (and different advisors). This book takes only one route.
+Our intent is to cover a canon completely and rigorously, with enough exam-
+ples and calculations to help develop intuition for the machinery. This is often
+the content of a second course in algebraic geometry, and in an ideal world, peo-
+ple would learn this material over many years, after having background courses
+in commutative algebra, algebraic topology, differential geometry, complex analy-
+sis, homological algebra, number theory, and French literature. We do not live in
+an ideal world. For this reason, the book is written as a first introduction, but a
+challenging one.
+This book seeks to do a very few things, but to try to do them well. Our goals
+and premises are as follows.
+The core of the material should be digestible over a single year. After a
+year of blood, sweat, and tears, readers should have a broad familiarity with the
+foundations of the subject, and be ready to attend seminars, and learn more ad-
+vanced material. They should not just have a vague intuitive understanding of
+the ideas of the subject; they should know interesting examples, know why they
+are interesting, and be able to work through their details. Readers in other fields
+of mathematics should know enough to understand the algebro-geometric ideas
+that arise in their area of interest.
+This means that this book is not encyclopedic, and even beyond that, hard
+choices have to be made. (In particular, analytic aspects are essentially ignored,
+and are at best dealt with in passing without proof. This is a book about algebraic
+algebraic geometry.)
+This book is usable (and has been used) for a course, but the course should
+(as always) take on the personality of the instructor. With a good course, people
+should be able to leave early and still get something useful from the experience.
+With this book, it is possible to leave without regret after learning about category
+theory, or about sheaves, or about geometric spaces, having become a better per-
+son.
+The book is also usable (and has been used) for learning on your own. But
+most mortals cannot learn algebraic geometry fully on their own; ideally you
+should read in a group, and even if not, you should have someone you can ask
+questions to (both stupid and smart questions).
+There is certainly more than a year’s material here, but I have tried to make
+clear which topics are essential, and which are not. Those teaching a class will
+choose which “inessential” things are important for the point they wish to get
+across, and use them.
+There is a canon (at least for this particular approach to algebraic geometry). I
+have been repeatedly surprised at how much people in different parts of algebraic
+geometry agree on what every civilized algebraic geometer should know after a
+first (serious) year. (There are of course different canons for different parts of the
+subject, e.g., complex algebraic geometry, combinatorial algebraic geometry, com-
+putational algebraic geometry, etc.) There are extra bells and whistles that different
+instructors might add on, to prepare students for their particular part of the field
+or their own point of view, but the core of the subject remains unified, despite the
+diversity and richness of the subject. There are some serious and painful compro-
+mises to be made to reconcile this goal with the previous one.
+Algebraic geometry is for everyone (with the appropriate definition of “ev-
+eryone”). Algebraic geometry courses tend to require a lot of background, which
+makes them inaccessible to all but those who know they will go deeply into the
+subject. Algebraic geometry is too important for that; it is essential that many of
+those in nearby fields develop some serious familiarity with the foundational ideas
+and tools of the subject, and not just at a superficial level. (Similarly, algebraic ge-
+ometers uninterested in any nearby field are necessarily arid, narrow thinkers. Do
+not be such a person!)
+For this reason, this book attempts to require as little background as possible.
+The background required will, in a technical sense, be surprisingly minimal — ide-
+ally just some commutative ring theory and point-set topology, and some comfort
+with things like prime ideals and localization. This is misleading of course — the
+more you know, the better. And the less background you have, the harder you will
+have to work — this is not a light read. On a related note...
+The book is intended to be as self-contained as possible. I have tried to
+follow the motto: “if you use it, you must prove it”. I have noticed that most
+students are human beings: if you tell them that some algebraic fact is in some late
+chapter of a book in commutative algebra, they will not immediately go and read
+it. Surprisingly often, what we need can be developed quickly from scratch, and
+even if people do not read it, they can see what is involved. The cost is that the
+book is much denser, and that significant sophistication and maturity is demanded
+of the reader. The benefit is that more people can follow it; they are less likely to
+reach a point where they get thrown. On the other hand, people who already have
+some familiarity with algebraic geometry, but want to understand the foundations
+more completely, should not be bored, and can focus on more subtle issues.
+As just one example, Krull’s Principal Ideal Theorem 11.3.3 is an important
+tool. I have included an essentially standard proof (§11.5). I do not want people
+to read it (unless they really really want to), and signal this by a double-star in the
+title: ⋆⋆. Instead, I want people to skim it and realize that they could read it, and
+that it is not seriously hard.
+This is an important goal because it is important not just to know what is true,
+but to know why things are true, and what is hard, and what is not hard. Also,
+this helps the previous goal, by reducing the number of prerequisites.
+The book is intended to build intuition for the formidable machinery of al-
+gebraic geometry. The exercises are central for this (see §0.0.1). Informal language
+can sometimes be helpful. Many examples are given. Learning how to think
+cleanly (and in particular categorically) is essential. The advantages of appropriate
+generality should be made clear by example, and not by intimidation. The mo-
+tivation is more local than global. For example, there is no introductory chapter
+explaining why one might be interested in algebraic geometry, and instead there
+is an introductory chapter explaining why you should want to think categorically
+(and how to actually do this).
+Balancing the above goals is already impossible. We must thus give up any
+hope of achieving any other desiderata. There are no other goals.

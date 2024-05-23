@@ -1,0 +1,168 @@
+\hypertarget{structRestaraunt}{}\doxysection{Restaraunt Struct Reference}
+\label{structRestaraunt}\index{Restaraunt@{Restaraunt}}
+
+
+The \mbox{\hyperlink{structRestaraunt}{Restaraunt}} struct represents a restaraunt.  
+
+
+
+
+{\ttfamily \#include $<$restaraunt.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structRestaraunt_a8dcda16f2ab93a51a0145aac26712af1}\label{structRestaraunt_a8dcda16f2ab93a51a0145aac26712af1}} 
+\mbox{\hyperlink{structRestaraunt_a8dcda16f2ab93a51a0145aac26712af1}{Restaraunt}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for \mbox{\hyperlink{structRestaraunt}{Restaraunt}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structRestaraunt_a73eefbbaf646120f1d366179b2ea8f5e}{Restaraunt}} (std\+::string, double, int, std\+::vector$<$ std\+::pair$<$ std\+::string, double $>$$>$)
+\begin{DoxyCompactList}\small\item\em Constructor for \mbox{\hyperlink{structRestaraunt}{Restaraunt}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structRestaraunt_a6962fe3821099d1411068fe299903147}\label{structRestaraunt_a6962fe3821099d1411068fe299903147}} 
+void \mbox{\hyperlink{structRestaraunt_a6962fe3821099d1411068fe299903147}{print}} ()
+\begin{DoxyCompactList}\small\item\em Print the details of the restaraunt. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::string \mbox{\hyperlink{structRestaraunt_a92e5cb996b81b61f7a3fcaf3e7e8ebae}{get\+ID}} (std\+::string, int)
+\begin{DoxyCompactList}\small\item\em Generate ID of the restaraunt. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{structRestaraunt_ac61a871d0abfa6c5f019f0521e3ae247}{name}}
+\item 
+double \mbox{\hyperlink{structRestaraunt_a6f2f34138d9701c5e71ac7a942fb9960}{bill}}
+\item 
+int \mbox{\hyperlink{structRestaraunt_a1162558e84aad5ed5aeccd9d026c746b}{menu}}
+\item 
+std\+::vector$<$ std\+::pair$<$ std\+::string, double $>$ $>$ \mbox{\hyperlink{structRestaraunt_a7436e07b103c2af02db3c036568c00f4}{rating}}
+\item 
+std\+::string \mbox{\hyperlink{structRestaraunt_a47169ea4a5a93a47dc69cebdd4459f29}{id}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int \mbox{\hyperlink{structRestaraunt_a0dd949e8cdbcc1964d5125972b69bcca}{id\+Param}} = 3
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{structRestaraunt_a33853d7728f6fc3f1e0f54c0bc616480}{operator$<$}} (\mbox{\hyperlink{structRestaraunt}{Restaraunt}} const \&a, \mbox{\hyperlink{structRestaraunt}{Restaraunt}} const \&b)
+\begin{DoxyCompactList}\small\item\em Overloading less than operator for \mbox{\hyperlink{structRestaraunt}{Restaraunt}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{structRestaraunt}{Restaraunt}} struct represents a restaraunt. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structRestaraunt_a73eefbbaf646120f1d366179b2ea8f5e}\label{structRestaraunt_a73eefbbaf646120f1d366179b2ea8f5e}} 
+\index{Restaraunt@{Restaraunt}!Restaraunt@{Restaraunt}}
+\index{Restaraunt@{Restaraunt}!Restaraunt@{Restaraunt}}
+\doxysubsubsection{\texorpdfstring{Restaraunt()}{Restaraunt()}}
+{\footnotesize\ttfamily Restaraunt\+::\+Restaraunt (\begin{DoxyParamCaption}\item[{std\+::string}]{Name\+\_\+,  }\item[{double}]{Bill\+\_\+,  }\item[{int}]{Menu\+\_\+,  }\item[{std\+::vector$<$ std\+::pair$<$ std\+::string, double $>$$>$}]{Rating\+\_\+ }\end{DoxyParamCaption})}
+
+
+
+Constructor for \mbox{\hyperlink{structRestaraunt}{Restaraunt}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Name\+\_\+} & The name of the restaurant. \\
+\hline
+{\em Bill\+\_\+} & The bill amount of the restaurant. \\
+\hline
+{\em Menu\+\_\+} & The menu of the restaurant. \\
+\hline
+{\em Rating\+\_\+} & The rating of the restaurant. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structRestaraunt_a92e5cb996b81b61f7a3fcaf3e7e8ebae}\label{structRestaraunt_a92e5cb996b81b61f7a3fcaf3e7e8ebae}} 
+\index{Restaraunt@{Restaraunt}!getID@{getID}}
+\index{getID@{getID}!Restaraunt@{Restaraunt}}
+\doxysubsubsection{\texorpdfstring{getID()}{getID()}}
+{\footnotesize\ttfamily std\+::string Restaraunt\+::get\+ID (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{int}]{hash\+Param }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Generate ID of the restaraunt. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the restaraunt \\
+\hline
+{\em hash\+Param} & The hash parameter value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The ID of the restaraunt 
+\end{DoxyReturn}
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{structRestaraunt_a33853d7728f6fc3f1e0f54c0bc616480}\label{structRestaraunt_a33853d7728f6fc3f1e0f54c0bc616480}} 
+\index{Restaraunt@{Restaraunt}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Restaraunt@{Restaraunt}}
+\doxysubsubsection{\texorpdfstring{operator$<$}{operator<}}
+{\footnotesize\ttfamily bool operator$<$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structRestaraunt}{Restaraunt}} const \&}]{a,  }\item[{\mbox{\hyperlink{structRestaraunt}{Restaraunt}} const \&}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Overloading less than operator for \mbox{\hyperlink{structRestaraunt}{Restaraunt}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & The first restaraunt to be compared. \\
+\hline
+{\em b} & The second restaraunt to be compared. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if a is less than b, false otherwise. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structRestaraunt_a6f2f34138d9701c5e71ac7a942fb9960}\label{structRestaraunt_a6f2f34138d9701c5e71ac7a942fb9960}} 
+\index{Restaraunt@{Restaraunt}!bill@{bill}}
+\index{bill@{bill}!Restaraunt@{Restaraunt}}
+\doxysubsubsection{\texorpdfstring{bill}{bill}}
+{\footnotesize\ttfamily double Restaraunt\+::bill}
+
+The average bill of the restaraunt \mbox{\Hypertarget{structRestaraunt_a47169ea4a5a93a47dc69cebdd4459f29}\label{structRestaraunt_a47169ea4a5a93a47dc69cebdd4459f29}} 
+\index{Restaraunt@{Restaraunt}!id@{id}}
+\index{id@{id}!Restaraunt@{Restaraunt}}
+\doxysubsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily std\+::string Restaraunt\+::id}
+
+The ID of the restaraunt \mbox{\Hypertarget{structRestaraunt_a0dd949e8cdbcc1964d5125972b69bcca}\label{structRestaraunt_a0dd949e8cdbcc1964d5125972b69bcca}} 
+\index{Restaraunt@{Restaraunt}!idParam@{idParam}}
+\index{idParam@{idParam}!Restaraunt@{Restaraunt}}
+\doxysubsubsection{\texorpdfstring{idParam}{idParam}}
+{\footnotesize\ttfamily const int Restaraunt\+::id\+Param = 3\hspace{0.3cm}{\ttfamily [static]}}
+
+The ID parameter value \mbox{\Hypertarget{structRestaraunt_a1162558e84aad5ed5aeccd9d026c746b}\label{structRestaraunt_a1162558e84aad5ed5aeccd9d026c746b}} 
+\index{Restaraunt@{Restaraunt}!menu@{menu}}
+\index{menu@{menu}!Restaraunt@{Restaraunt}}
+\doxysubsubsection{\texorpdfstring{menu}{menu}}
+{\footnotesize\ttfamily int Restaraunt\+::menu}
+
+Number of variants in restaraunt\textquotesingle{}s menu \mbox{\Hypertarget{structRestaraunt_ac61a871d0abfa6c5f019f0521e3ae247}\label{structRestaraunt_ac61a871d0abfa6c5f019f0521e3ae247}} 
+\index{Restaraunt@{Restaraunt}!name@{name}}
+\index{name@{name}!Restaraunt@{Restaraunt}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily std\+::string Restaraunt\+::name}
+
+The name of the restaraunt \mbox{\Hypertarget{structRestaraunt_a7436e07b103c2af02db3c036568c00f4}\label{structRestaraunt_a7436e07b103c2af02db3c036568c00f4}} 
+\index{Restaraunt@{Restaraunt}!rating@{rating}}
+\index{rating@{rating}!Restaraunt@{Restaraunt}}
+\doxysubsubsection{\texorpdfstring{rating}{rating}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::pair$<$std\+::string, double$>$ $>$ Restaraunt\+::rating}
+
+Pairs $<$Name of the rating, rating$>$ 
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+inc/\mbox{\hyperlink{restaraunt_8h}{restaraunt.\+h}}\item 
+src/\mbox{\hyperlink{restaraunt_8cpp}{restaraunt.\+cpp}}\end{DoxyCompactItemize}

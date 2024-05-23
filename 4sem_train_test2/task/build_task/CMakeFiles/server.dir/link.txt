@@ -1,0 +1,1 @@
+/usr/bin/c++ -rdynamic CMakeFiles/server.dir/src/server.cpp.o CMakeFiles/server.dir/src/myjson.cpp.o CMakeFiles/server.dir/src/generator.cpp.o CMakeFiles/server.dir/src/reg.cpp.o CMakeFiles/server.dir/src/restaraunt.cpp.o -o server 

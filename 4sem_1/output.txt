@@ -1,0 +1,96 @@
+The ##### of this book
+There ### # number of possible introductions to the field of ######### geome-
+try: ####### ########; complex geometry; the theory of #########; # nonrigorous
+########-##### introduction; ######### geometry for number theorists; ## ########
+########## ########; ### more. All #### their #####. Different ########## suit dif-
+ferent students (### different ########). This book ##### only one route.
+Our intent is to cover # ##### completely ### rigorously, with enough ####-
+ples ### ############ to help develop intuition for the #########. This is often
+the content of # second course in ######### geometry, ### in ## ##### world, peo-
+ple would ##### this ######## over #### #####, ##### ###### ########## courses
+in ########### #######, ######### topology, ############ geometry, complex #####-
+sis, ########### #######, number theory, ### French ##########. We do not live in
+## ##### world. For this ######, the book is written ## # first introduction, but #
+########### one.
+This book seeks to do # very few things, but to try to do them well. Our #####
+### premises ### ## follows.
+The core of the ######## should be digestible over # single ####. After #
+#### of blood, #####, ### #####, ####### should #### # ##### ########### with the
+########### of the subject, ### be ##### to ###### ########, ### ##### more ##-
+###### ########. They should not just #### # ##### intuitive ############# of
+the ##### of the subject; they should know interesting ########, know why they
+### interesting, ### be #### to work through their #######. ####### in other fields
+of ########### should know enough to ########## the #######-geometric #####
+#### ##### in their #### of interest.
+This ##### #### this book is not encyclopedic, ### even beyond ####, ####
+choices #### to be ####. (In ##########, ######## ####### ### ########### ignored,
+### ### ## best ##### with in ####### without proof. This is # book ##### #########
+######### geometry.)
+This book is ###### (### ### been used) for # course, but the course should
+(## ######) #### on the ########### of the instructor. With # good course, people
+should be #### to ##### ##### ### still get something useful from the experience.
+With this book, it is possible to ##### without regret ##### ######## ##### ########
+theory, or ##### #######, or ##### geometric ######, ###### become # better per-
+son.
+The book is #### ###### (### ### been used) for ######## on your own. But
+most ####### ###### ##### ######### geometry fully on their own; ####### you
+should #### in # group, ### even if not, you should #### someone you ### ###
+questions to (both stupid ### ##### questions).
+There is ######### more #### # ####’s ######## here, but I #### tried to ####
+##### which topics ### #########, ### which ### not. Those ######## # ##### will
+choose which “###########” things ### ######### for the point they wish to get
+######, ### use them.
+There is # ##### (## ##### for this ########## ######## to ######### geometry). I
+#### been ########## surprised ## how much people in different ##### of #########
+geometry ##### on #### every civilized ######### geometer should know ##### #
+first (serious) ####. (There ### of course different ###### for different ##### of the
+subject, e.g., complex ######### geometry, ############# ######### geometry, com-
+########## ######### geometry, etc.) There ### ##### bells ### whistles #### different
+instructors might ### on, to ####### students for their ########## #### of the field
+or their own point of view, but the core of the subject ####### unified, despite the
+diversity ### richness of the subject. There ### some serious ### ####### compro-
+mises to be #### to reconcile this #### with the previous one.
+######### geometry is for everyone (with the ########### definition of “ev-
+eryone”). ######### geometry courses tend to require # lot of ##########, which
+##### them ############ to ### but those who know they will go deeply into the
+subject. ######### geometry is too ######### for ####; it is ######### #### #### of
+those in ###### fields develop some serious ########### with the ############ #####
+### tools of the subject, ### not just ## # ########### level. (#########, ######### ge-
+ometers uninterested in ### ###### field ### ########### ####, ###### thinkers. Do
+not be such # person!)
+For this ######, this book ######## to require ## little ########## ## possible.
+The ########## required will, in # ######### sense, be surprisingly ####### — ide-
+#### just some ########### ring theory ### point-set topology, ### some comfort
+with things like prime ###### ### ############. This is ########## of course — the
+more you know, the better. And the less ########## you ####, the ###### you will
+#### to work — this is not # light ####. On # ####### note...
+The book is intended to be ## self-######### ## possible. I #### tried to
+follow the motto: “if you use it, you must prove it”. I #### noticed #### most
+students ### ##### beings: if you tell them #### some ######### #### is in some ####
+####### of # book in ########### #######, they will not ########### go ### ####
+it. Surprisingly often, #### we need ### be developed quickly from #######, ###
+even if people do not #### it, they ### see #### is involved. The cost is #### the
+book is much denser, ### #### ########### ############## ### ######## is ########
+of the ######. The benefit is #### more people ### follow it; they ### less likely to
+##### # point where they get thrown. On the other ####, people who ####### ####
+some ########### with ######### geometry, but #### to ########## the ###########
+more completely, should not be bored, ### ### focus on more subtle issues.
+As just one #######, Krull’s ######### ##### Theorem 11.3.3 is ## #########
+tool. I #### included ## ########### ######## proof (§11.5). I do not #### people
+to #### it (unless they ###### ###### #### to), ### ###### this by # double-#### in the
+title: ⋆⋆. #######, I #### people to skim it ### ####### #### they could #### it, ###
+#### it is not seriously ####.
+This is ## ######### #### ####### it is ######### not just to know #### is true,
+but to know why things ### true, ### #### is ####, ### #### is not ####. Also,
+this helps the previous ####, by reducing the number of prerequisites.
+The book is intended to build intuition for the ########## ######### of ##-
+####### geometry. The exercises ### ####### for this (see §0.0.1). ######## ########
+### sometimes be helpful. #### ######## ### given. ######## how to think
+####### (### in ########## #############) is #########. The ########## of ###########
+########## should be #### ##### by #######, ### not by ############. The mo-
+######## is more ##### #### ######. For #######, there is no introductory #######
+########## why one might be interested in ######### geometry, ### ####### there
+is ## introductory ####### ########## why you should #### to think #############
+(### how to ######## do this).
+######### the ##### ##### is ####### impossible. We must thus give up ###
+hope of ######### ### other ##########. There ### no other #####.

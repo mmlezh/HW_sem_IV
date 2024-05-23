@@ -1,0 +1,5 @@
+{
+  "companies": ["company1", "company2", "company3", "company4", "company5", "company6", "company7"],
+  "cities": ["Moscow", "Samara", "St. Petersburg", "Kazan", "Krasnoyarsk"],
+  "assignments": ["securing", "cleaning", "tax count", "provision of legal services", "web development"]
+}

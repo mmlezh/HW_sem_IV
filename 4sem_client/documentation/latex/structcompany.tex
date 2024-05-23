@@ -1,0 +1,101 @@
+\hypertarget{structcompany}{}\doxysection{company Struct Reference}
+\label{structcompany}\index{company@{company}}
+
+
+The company struct represents a company.  
+
+
+
+
+{\ttfamily \#include $<$task.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{structcompany_a411b29c153adf24e0f68327661ce673d}{to\+\_\+json}} (json \&j, const \mbox{\hyperlink{structcompany}{company}} \&c)
+\item 
+void \mbox{\hyperlink{structcompany_accd6ae26fb094ce621b9bf097b195867}{from\+\_\+json}} (const json \&j, \mbox{\hyperlink{structcompany}{company}} \&c)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{structcompany_ae76aea2a39988e6b4f3485d74230b212}{name}}
+\item 
+std\+::string \mbox{\hyperlink{structcompany_ad9b59de8ed68b00682deb08c25ee4743}{city}}
+\item 
+int \mbox{\hyperlink{structcompany_ae61b55f30144c9cc7f912e96970e86dc}{finances}}
+\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{structcompany_afae99b5ef15d3984b0f157cc0decb51e}{assignments}}
+\item 
+std\+::string \mbox{\hyperlink{structcompany_a81f5ba9fca689b83bb5e3b922d3ad4ee}{id}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The company struct represents a company. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structcompany_accd6ae26fb094ce621b9bf097b195867}\label{structcompany_accd6ae26fb094ce621b9bf097b195867}} 
+\index{company@{company}!from\_json@{from\_json}}
+\index{from\_json@{from\_json}!company@{company}}
+\doxysubsubsection{\texorpdfstring{from\_json()}{from\_json()}}
+{\footnotesize\ttfamily void company\+::from\+\_\+json (\begin{DoxyParamCaption}\item[{const json \&}]{j,  }\item[{\mbox{\hyperlink{structcompany}{company}} \&}]{c }\end{DoxyParamCaption})}
+
+@brief\+Overloaded from\+\_\+json function. 
+\begin{DoxyParams}{Parameters}
+{\em j} & is Json variable that should be transformed to company object. \\
+\hline
+{\em c} & is company object that will be received from j. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{structcompany_a411b29c153adf24e0f68327661ce673d}\label{structcompany_a411b29c153adf24e0f68327661ce673d}} 
+\index{company@{company}!to\_json@{to\_json}}
+\index{to\_json@{to\_json}!company@{company}}
+\doxysubsubsection{\texorpdfstring{to\_json()}{to\_json()}}
+{\footnotesize\ttfamily void company\+::to\+\_\+json (\begin{DoxyParamCaption}\item[{json \&}]{j,  }\item[{const \mbox{\hyperlink{structcompany}{company}} \&}]{c }\end{DoxyParamCaption})}
+
+@brief\+Overloaded to\+\_\+json function. 
+\begin{DoxyParams}{Parameters}
+{\em j} & is Json variable as result. \\
+\hline
+{\em c} & is company object that will be transformed to Json. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structcompany_afae99b5ef15d3984b0f157cc0decb51e}\label{structcompany_afae99b5ef15d3984b0f157cc0decb51e}} 
+\index{company@{company}!assignments@{assignments}}
+\index{assignments@{assignments}!company@{company}}
+\doxysubsubsection{\texorpdfstring{assignments}{assignments}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::string$>$ company\+::assignments}
+
+Assignments of company \mbox{\Hypertarget{structcompany_ad9b59de8ed68b00682deb08c25ee4743}\label{structcompany_ad9b59de8ed68b00682deb08c25ee4743}} 
+\index{company@{company}!city@{city}}
+\index{city@{city}!company@{company}}
+\doxysubsubsection{\texorpdfstring{city}{city}}
+{\footnotesize\ttfamily std\+::string company\+::city}
+
+City where company is located \mbox{\Hypertarget{structcompany_ae61b55f30144c9cc7f912e96970e86dc}\label{structcompany_ae61b55f30144c9cc7f912e96970e86dc}} 
+\index{company@{company}!finances@{finances}}
+\index{finances@{finances}!company@{company}}
+\doxysubsubsection{\texorpdfstring{finances}{finances}}
+{\footnotesize\ttfamily int company\+::finances}
+
+Finantial indicators of company \mbox{\Hypertarget{structcompany_a81f5ba9fca689b83bb5e3b922d3ad4ee}\label{structcompany_a81f5ba9fca689b83bb5e3b922d3ad4ee}} 
+\index{company@{company}!id@{id}}
+\index{id@{id}!company@{company}}
+\doxysubsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily std\+::string company\+::id}
+
+Company ID \mbox{\Hypertarget{structcompany_ae76aea2a39988e6b4f3485d74230b212}\label{structcompany_ae76aea2a39988e6b4f3485d74230b212}} 
+\index{company@{company}!name@{name}}
+\index{name@{name}!company@{company}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily std\+::string company\+::name}
+
+Name of company 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+inc/\mbox{\hyperlink{task_8h}{task.\+h}}\end{DoxyCompactItemize}

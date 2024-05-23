@@ -1,0 +1,6 @@
+<map id="inc/generator.h" name="inc/generator.h">
+<area shape="rect" id="node1" title="Header file for the Generator class." alt="" coords="157,5,276,32"/>
+<area shape="rect" id="node2" href="$generator_8cpp.html" title="Realization of Generator class." alt="" coords="5,80,140,107"/>
+<area shape="rect" id="node3" href="$main_8cpp.html" title="Main file for offline usage." alt="" coords="164,80,269,107"/>
+<area shape="rect" id="node4" href="$server_8cpp.html" title="Server realisation." alt="" coords="293,80,405,107"/>
+</map>

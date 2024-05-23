@@ -1,0 +1,5 @@
+/home/qerased/fast/task_build/CMakeFiles/main.dir
+/home/qerased/fast/task_build/CMakeFiles/server.dir
+/home/qerased/fast/task_build/CMakeFiles/client.dir
+/home/qerased/fast/task_build/CMakeFiles/edit_cache.dir
+/home/qerased/fast/task_build/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,108 @@
+\hypertarget{classGenerator}{}\doxysection{Generator Class Reference}
+\label{classGenerator}\index{Generator@{Generator}}
+
+
+Generates random JSON file filled with random Restaraunts.  
+
+
+
+
+{\ttfamily \#include $<$generator.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classGenerator_aaaf1e5f3a47ede3ef8a96a301ee04a10}{Generator}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for the \mbox{\hyperlink{classGenerator}{Generator}} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGenerator_a7019415dd84370fabe5cd08b20fe9349}{read\+Files}} (std\+::string, std\+::string)
+\begin{DoxyCompactList}\small\item\em Reads data from files. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGenerator_a7201d29c214f2f327f17ba27bc461ef5}{generate}} (std\+::string, int)
+\begin{DoxyCompactList}\small\item\em Generates random Restaraunts. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGenerator_a54ce3475933f25b99363b5c945ed1042}{print}} ()
+\begin{DoxyCompactList}\small\item\em Prints the Restaraunts in the vector. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structRestaraunt}{Restaraunt}} \mbox{\hyperlink{classGenerator_aa84f2986ba9199e3534c35d7d7a97b1a}{gen\+Restaraunt}} ()
+\begin{DoxyCompactList}\small\item\em Generates a random \mbox{\hyperlink{structRestaraunt}{Restaraunt}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Generates random JSON file filled with random Restaraunts. 
+
+This class generates random \mbox{\hyperlink{structRestaraunt}{Restaraunt}} objects using the data read from files. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classGenerator_aaaf1e5f3a47ede3ef8a96a301ee04a10}\label{classGenerator_aaaf1e5f3a47ede3ef8a96a301ee04a10}} 
+\index{Generator@{Generator}!Generator@{Generator}}
+\index{Generator@{Generator}!Generator@{Generator}}
+\doxysubsubsection{\texorpdfstring{Generator()}{Generator()}}
+{\footnotesize\ttfamily Generator\+::\+Generator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor for the \mbox{\hyperlink{classGenerator}{Generator}} class. 
+
+Initializes the random seed for generating random Restaraunts. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classGenerator_a7201d29c214f2f327f17ba27bc461ef5}\label{classGenerator_a7201d29c214f2f327f17ba27bc461ef5}} 
+\index{Generator@{Generator}!generate@{generate}}
+\index{generate@{generate}!Generator@{Generator}}
+\doxysubsubsection{\texorpdfstring{generate()}{generate()}}
+{\footnotesize\ttfamily void Generator\+::generate (\begin{DoxyParamCaption}\item[{std\+::string}]{fname,  }\item[{int}]{generate\+Amount }\end{DoxyParamCaption})}
+
+
+
+Generates random Restaraunts. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & The file to write the generated Restaraunts to. \\
+\hline
+{\em number} & The number of Restaraunts to generate. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGenerator_aa84f2986ba9199e3534c35d7d7a97b1a}\label{classGenerator_aa84f2986ba9199e3534c35d7d7a97b1a}} 
+\index{Generator@{Generator}!genRestaraunt@{genRestaraunt}}
+\index{genRestaraunt@{genRestaraunt}!Generator@{Generator}}
+\doxysubsubsection{\texorpdfstring{genRestaraunt()}{genRestaraunt()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structRestaraunt}{Restaraunt}} Generator\+::gen\+Restaraunt (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Generates a random \mbox{\hyperlink{structRestaraunt}{Restaraunt}}. 
+
+\begin{DoxyReturn}{Returns}
+A randomly generated \mbox{\hyperlink{structRestaraunt}{Restaraunt}}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGenerator_a54ce3475933f25b99363b5c945ed1042}\label{classGenerator_a54ce3475933f25b99363b5c945ed1042}} 
+\index{Generator@{Generator}!print@{print}}
+\index{print@{print}!Generator@{Generator}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void Generator\+::print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Prints the Restaraunts in the vector. 
+
+This function is for testing purposes only. \mbox{\Hypertarget{classGenerator_a7019415dd84370fabe5cd08b20fe9349}\label{classGenerator_a7019415dd84370fabe5cd08b20fe9349}} 
+\index{Generator@{Generator}!readFiles@{readFiles}}
+\index{readFiles@{readFiles}!Generator@{Generator}}
+\doxysubsubsection{\texorpdfstring{readFiles()}{readFiles()}}
+{\footnotesize\ttfamily void Generator\+::read\+Files (\begin{DoxyParamCaption}\item[{std\+::string}]{names,  }\item[{std\+::string}]{ratings }\end{DoxyParamCaption})}
+
+
+
+Reads data from files. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rest\+File} & The file containing the \mbox{\hyperlink{structRestaraunt}{Restaraunt}} names. \\
+\hline
+{\em rating\+File} & The file containing the rating names. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+inc/\mbox{\hyperlink{generator_8h}{generator.\+h}}\item 
+src/\mbox{\hyperlink{generator_8cpp}{generator.\+cpp}}\end{DoxyCompactItemize}

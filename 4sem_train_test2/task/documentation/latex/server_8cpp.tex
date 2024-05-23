@@ -1,0 +1,185 @@
+\hypertarget{server_8cpp}{}\doxysection{src/server.cpp File Reference}
+\label{server_8cpp}\index{src/server.cpp@{src/server.cpp}}
+
+
+Server realisation.  
+
+
+{\ttfamily \#include $<$csignal$>$}\newline
+{\ttfamily \#include \char`\"{}myjson.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}generator.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}httplib.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}reg.\+h\char`\"{}}\newline
+Include dependency graph for server.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{server_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{server_8cpp_a96748bdb27e8d14b48f7a30786407bf6}{req\+\_\+generate}} (const httplib\+::\+Request \&, httplib\+::\+Response \&, \mbox{\hyperlink{classmyjson}{myjson}} \&, \mbox{\hyperlink{classGenerator}{Generator}} \&)
+\begin{DoxyCompactList}\small\item\em Function to randomly generate a JSON data with a given number of Restaraunts. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{server_8cpp_a430d08f29effd2087b94d1a344773474}{req\+\_\+print}} (const httplib\+::\+Request \&, httplib\+::\+Response \&, \mbox{\hyperlink{classmyjson}{myjson}} \&)
+\begin{DoxyCompactList}\small\item\em Function to print the contents of the data structure. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{server_8cpp_a6e7f901bca3f346ed2fc05718d665f6a}{req\+\_\+delete}} (const httplib\+::\+Request \&, httplib\+::\+Response \&, \mbox{\hyperlink{classmyjson}{myjson}} \&)
+\begin{DoxyCompactList}\small\item\em Function to delete an element from the data structure based on user input. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{server_8cpp_aada283390a827965cdacbded55dbcfcc}{req\+\_\+add}} (const httplib\+::\+Request \&, httplib\+::\+Response \&, \mbox{\hyperlink{classmyjson}{myjson}} \&, \mbox{\hyperlink{classGenerator}{Generator}} \&)
+\begin{DoxyCompactList}\small\item\em Function to add a new element to the data structure based on user input (ID) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{server_8cpp_a60abf4c11246be8864a8c9e4cad2fc24}{req\+\_\+find}} (const httplib\+::\+Request \&, httplib\+::\+Response \&, \mbox{\hyperlink{classmyjson}{myjson}} \&)
+\begin{DoxyCompactList}\small\item\em Function to find an element in the data structure based on user input (ID) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{server_8cpp_a3ec5dba9b651e0752ba049613a40fc87}{req\+\_\+save}} (const httplib\+::\+Request \&, httplib\+::\+Response \&, \mbox{\hyperlink{classmyjson}{myjson}} \&)
+\begin{DoxyCompactList}\small\item\em Function to save the current state of the data structure to a file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{server_8cpp_ad9958fe3cd6c0d05b817baf23d59e21a}{req\+\_\+shutdown}} (const httplib\+::\+Request \&, httplib\+::\+Response \&)
+\begin{DoxyCompactList}\small\item\em Function to shutdown the server. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{server_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{server_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+int {\bfseries main} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Server realisation. 
+
+Realisation of a server to work with restaraunt JSON data remotely. 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{server_8cpp_aada283390a827965cdacbded55dbcfcc}\label{server_8cpp_aada283390a827965cdacbded55dbcfcc}} 
+\index{server.cpp@{server.cpp}!req\_add@{req\_add}}
+\index{req\_add@{req\_add}!server.cpp@{server.cpp}}
+\doxysubsubsection{\texorpdfstring{req\_add()}{req\_add()}}
+{\footnotesize\ttfamily void req\+\_\+add (\begin{DoxyParamCaption}\item[{const httplib\+::\+Request \&}]{req,  }\item[{httplib\+::\+Response \&}]{,  }\item[{\mbox{\hyperlink{classmyjson}{myjson}} \&}]{data,  }\item[{\mbox{\hyperlink{classGenerator}{Generator}} \&}]{gen }\end{DoxyParamCaption})}
+
+
+
+Function to add a new element to the data structure based on user input (ID) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & Object representing the user request \\
+\hline
+{\em response} & Object to be sent back as the response to the user \\
+\hline
+{\em data} & Object representing the current state of the data structure \\
+\hline
+{\em generator} & Object used to generate new elements \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{server_8cpp_a6e7f901bca3f346ed2fc05718d665f6a}\label{server_8cpp_a6e7f901bca3f346ed2fc05718d665f6a}} 
+\index{server.cpp@{server.cpp}!req\_delete@{req\_delete}}
+\index{req\_delete@{req\_delete}!server.cpp@{server.cpp}}
+\doxysubsubsection{\texorpdfstring{req\_delete()}{req\_delete()}}
+{\footnotesize\ttfamily void req\+\_\+delete (\begin{DoxyParamCaption}\item[{const httplib\+::\+Request \&}]{req,  }\item[{httplib\+::\+Response \&}]{,  }\item[{\mbox{\hyperlink{classmyjson}{myjson}} \&}]{data }\end{DoxyParamCaption})}
+
+
+
+Function to delete an element from the data structure based on user input. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & Object representing the user request \\
+\hline
+{\em response} & Object to be sent back as the response to the user \\
+\hline
+{\em data} & Object representing the current state of the data structure \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{server_8cpp_a60abf4c11246be8864a8c9e4cad2fc24}\label{server_8cpp_a60abf4c11246be8864a8c9e4cad2fc24}} 
+\index{server.cpp@{server.cpp}!req\_find@{req\_find}}
+\index{req\_find@{req\_find}!server.cpp@{server.cpp}}
+\doxysubsubsection{\texorpdfstring{req\_find()}{req\_find()}}
+{\footnotesize\ttfamily void req\+\_\+find (\begin{DoxyParamCaption}\item[{const httplib\+::\+Request \&}]{req,  }\item[{httplib\+::\+Response \&}]{res,  }\item[{\mbox{\hyperlink{classmyjson}{myjson}} \&}]{data }\end{DoxyParamCaption})}
+
+
+
+Function to find an element in the data structure based on user input (ID) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & Object representing the user request \\
+\hline
+{\em response} & Object to be sent back as the response to the user \\
+\hline
+{\em data} & Object representing the current state of the data structure \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{server_8cpp_a96748bdb27e8d14b48f7a30786407bf6}\label{server_8cpp_a96748bdb27e8d14b48f7a30786407bf6}} 
+\index{server.cpp@{server.cpp}!req\_generate@{req\_generate}}
+\index{req\_generate@{req\_generate}!server.cpp@{server.cpp}}
+\doxysubsubsection{\texorpdfstring{req\_generate()}{req\_generate()}}
+{\footnotesize\ttfamily void req\+\_\+generate (\begin{DoxyParamCaption}\item[{const httplib\+::\+Request \&}]{req,  }\item[{httplib\+::\+Response \&}]{res,  }\item[{\mbox{\hyperlink{classmyjson}{myjson}} \&}]{data,  }\item[{\mbox{\hyperlink{classGenerator}{Generator}} \&}]{gen }\end{DoxyParamCaption})}
+
+
+
+Function to randomly generate a JSON data with a given number of Restaraunts. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & Object representing the user request \\
+\hline
+{\em response} & Object to be sent back as the response to the user \\
+\hline
+{\em data} & Object representing the current state of the data structure \\
+\hline
+{\em generator} & Object used to generate new elements \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{server_8cpp_a430d08f29effd2087b94d1a344773474}\label{server_8cpp_a430d08f29effd2087b94d1a344773474}} 
+\index{server.cpp@{server.cpp}!req\_print@{req\_print}}
+\index{req\_print@{req\_print}!server.cpp@{server.cpp}}
+\doxysubsubsection{\texorpdfstring{req\_print()}{req\_print()}}
+{\footnotesize\ttfamily void req\+\_\+print (\begin{DoxyParamCaption}\item[{const httplib\+::\+Request \&}]{,  }\item[{httplib\+::\+Response \&}]{res,  }\item[{\mbox{\hyperlink{classmyjson}{myjson}} \&}]{data }\end{DoxyParamCaption})}
+
+
+
+Function to print the contents of the data structure. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & Object representing the user request \\
+\hline
+{\em response} & Object to be sent back as the response to the user \\
+\hline
+{\em data} & Object representing the current state of the data structure \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{server_8cpp_a3ec5dba9b651e0752ba049613a40fc87}\label{server_8cpp_a3ec5dba9b651e0752ba049613a40fc87}} 
+\index{server.cpp@{server.cpp}!req\_save@{req\_save}}
+\index{req\_save@{req\_save}!server.cpp@{server.cpp}}
+\doxysubsubsection{\texorpdfstring{req\_save()}{req\_save()}}
+{\footnotesize\ttfamily void req\+\_\+save (\begin{DoxyParamCaption}\item[{const httplib\+::\+Request \&}]{req,  }\item[{httplib\+::\+Response \&}]{,  }\item[{\mbox{\hyperlink{classmyjson}{myjson}} \&}]{data }\end{DoxyParamCaption})}
+
+
+
+Function to save the current state of the data structure to a file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & Object representing the user request \\
+\hline
+{\em response} & Object to be sent back as the response to the user \\
+\hline
+{\em data} & Object representing the current state of the data structure \\
+\hline
+{\em generator} & Object used to generate new elements \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{server_8cpp_ad9958fe3cd6c0d05b817baf23d59e21a}\label{server_8cpp_ad9958fe3cd6c0d05b817baf23d59e21a}} 
+\index{server.cpp@{server.cpp}!req\_shutdown@{req\_shutdown}}
+\index{req\_shutdown@{req\_shutdown}!server.cpp@{server.cpp}}
+\doxysubsubsection{\texorpdfstring{req\_shutdown()}{req\_shutdown()}}
+{\footnotesize\ttfamily void req\+\_\+shutdown (\begin{DoxyParamCaption}\item[{const httplib\+::\+Request \&}]{req,  }\item[{httplib\+::\+Response \&}]{res }\end{DoxyParamCaption})}
+
+
+
+Function to shutdown the server. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & Object representing the user request \\
+\hline
+{\em response} & Object to be sent back as the response to the user \\
+\hline
+\end{DoxyParams}

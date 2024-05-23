@@ -1,0 +1,5 @@
+/home/jogy/Рабочий стол/ROMA/task/build/CMakeFiles/main.dir
+/home/jogy/Рабочий стол/ROMA/task/build/CMakeFiles/server.dir
+/home/jogy/Рабочий стол/ROMA/task/build/CMakeFiles/client.dir
+/home/jogy/Рабочий стол/ROMA/task/build/CMakeFiles/edit_cache.dir
+/home/jogy/Рабочий стол/ROMA/task/build/CMakeFiles/rebuild_cache.dir

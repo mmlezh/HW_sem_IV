@@ -1,0 +1,196 @@
+\hypertarget{classmyjson}{}\doxysection{myjson Class Reference}
+\label{classmyjson}\index{myjson@{myjson}}
+
+
+Handles JSON data for storing and manipulating restaraunts.  
+
+
+
+
+{\ttfamily \#include $<$myjson.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmyjson_a73618cf25c678ba78a25784934658d77}\label{classmyjson_a73618cf25c678ba78a25784934658d77}} 
+\mbox{\hyperlink{classmyjson_a73618cf25c678ba78a25784934658d77}{myjson}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for myjson. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classmyjson_ac051f4c940755ae0287eda659d2b0a99}{myjson}} (char $\ast$)
+\begin{DoxyCompactList}\small\item\em Constructor for myjson that takes a json in string format as an argument. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classmyjson_af4db100b354a2bc0b5e8ab2c04dab267}{myjson}} (FILE $\ast$)
+\begin{DoxyCompactList}\small\item\em Constructor for myjson that takes a file stream as an argument. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classmyjson_a9fb2383909326e4d708ef7ccf6abcde0}{Input}} (FILE $\ast$)
+\begin{DoxyCompactList}\small\item\em Reads input from the specified file stream into the JSON data. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmyjson_a9e7fb36217cce17adfbab28d0be6c3e3}\label{classmyjson_a9e7fb36217cce17adfbab28d0be6c3e3}} 
+void \mbox{\hyperlink{classmyjson_a9e7fb36217cce17adfbab28d0be6c3e3}{Print}} ()
+\begin{DoxyCompactList}\small\item\em Prints the JSON data to the console. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmyjson_ae6750140012fdfbb505afceab2893bc1}\label{classmyjson_ae6750140012fdfbb505afceab2893bc1}} 
+void {\bfseries Clear} ()
+\item 
+void \mbox{\hyperlink{classmyjson_ae78ce5a9fab9c806c857d68fadf9019e}{Execute}} ()
+\begin{DoxyCompactList}\small\item\em Executes a command specified in the JSON data. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classmyjson_a00ea77b0ece4e4998657eabd2f99e080}{Add}} (\mbox{\hyperlink{structRestaraunt}{Restaraunt}})
+\begin{DoxyCompactList}\small\item\em Adds a restaraunt to the JSON data. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classmyjson_a2b9dcf5fbf5dff357c32c580d99ed7be}{Delete}} (std\+::string)
+\begin{DoxyCompactList}\small\item\em Deletes the restaraunt with the specified id from the JSON data. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmyjson_af2f9c918d6c141764bc07a1be235d460}\label{classmyjson_af2f9c918d6c141764bc07a1be235d460}} 
+void {\bfseries Save} (std\+::string)
+\item 
+std\+::string \mbox{\hyperlink{classmyjson_a7cc5fe6db613c6b712f7a775cca35687}{Dump}} ()
+\begin{DoxyCompactList}\small\item\em Dumps the JSON data to a string. \end{DoxyCompactList}\item 
+json \mbox{\hyperlink{classmyjson_af3b571f6109cd869fd7c528f09cb3ffe}{Find\+Restaraunt}} (std\+::string)
+\begin{DoxyCompactList}\small\item\em Finds the restaraunt with the specified id in the JSON data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static json \mbox{\hyperlink{classmyjson_aa2a932c1870c0c4fe70805b11ac2bbb9}{Create\+JSON}} (\mbox{\hyperlink{structRestaraunt}{Restaraunt}})
+\begin{DoxyCompactList}\small\item\em Creates a JSON object from a restaraunt object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Handles JSON data for storing and manipulating restaraunts. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classmyjson_ac051f4c940755ae0287eda659d2b0a99}\label{classmyjson_ac051f4c940755ae0287eda659d2b0a99}} 
+\index{myjson@{myjson}!myjson@{myjson}}
+\index{myjson@{myjson}!myjson@{myjson}}
+\doxysubsubsection{\texorpdfstring{myjson()}{myjson()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily myjson\+::myjson (\begin{DoxyParamCaption}\item[{char $\ast$}]{str }\end{DoxyParamCaption})}
+
+
+
+Constructor for myjson that takes a json in string format as an argument. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em json\+\_\+string} & The JSON file in string format. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmyjson_af4db100b354a2bc0b5e8ab2c04dab267}\label{classmyjson_af4db100b354a2bc0b5e8ab2c04dab267}} 
+\index{myjson@{myjson}!myjson@{myjson}}
+\index{myjson@{myjson}!myjson@{myjson}}
+\doxysubsubsection{\texorpdfstring{myjson()}{myjson()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily myjson\+::myjson (\begin{DoxyParamCaption}\item[{FILE $\ast$}]{fin }\end{DoxyParamCaption})}
+
+
+
+Constructor for myjson that takes a file stream as an argument. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em file} & The file stream containing the JSON data. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmyjson_a00ea77b0ece4e4998657eabd2f99e080}\label{classmyjson_a00ea77b0ece4e4998657eabd2f99e080}} 
+\index{myjson@{myjson}!Add@{Add}}
+\index{Add@{Add}!myjson@{myjson}}
+\doxysubsubsection{\texorpdfstring{Add()}{Add()}}
+{\footnotesize\ttfamily void myjson\+::\+Add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structRestaraunt}{Restaraunt}}}]{rest }\end{DoxyParamCaption})}
+
+
+
+Adds a restaraunt to the JSON data. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em restaraunt} & The restaraunt to add. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmyjson_aa2a932c1870c0c4fe70805b11ac2bbb9}\label{classmyjson_aa2a932c1870c0c4fe70805b11ac2bbb9}} 
+\index{myjson@{myjson}!CreateJSON@{CreateJSON}}
+\index{CreateJSON@{CreateJSON}!myjson@{myjson}}
+\doxysubsubsection{\texorpdfstring{CreateJSON()}{CreateJSON()}}
+{\footnotesize\ttfamily json myjson\+::\+Create\+JSON (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structRestaraunt}{Restaraunt}}}]{rest }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Creates a JSON object from a restaraunt object. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em restaraunt} & The restaraunt to create a JSON object from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A JSON object representing the restaraunt. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmyjson_a2b9dcf5fbf5dff357c32c580d99ed7be}\label{classmyjson_a2b9dcf5fbf5dff357c32c580d99ed7be}} 
+\index{myjson@{myjson}!Delete@{Delete}}
+\index{Delete@{Delete}!myjson@{myjson}}
+\doxysubsubsection{\texorpdfstring{Delete()}{Delete()}}
+{\footnotesize\ttfamily void myjson\+::\+Delete (\begin{DoxyParamCaption}\item[{std\+::string}]{id }\end{DoxyParamCaption})}
+
+
+
+Deletes the restaraunt with the specified id from the JSON data. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em id} & The id of the restaraunt to delete. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmyjson_a7cc5fe6db613c6b712f7a775cca35687}\label{classmyjson_a7cc5fe6db613c6b712f7a775cca35687}} 
+\index{myjson@{myjson}!Dump@{Dump}}
+\index{Dump@{Dump}!myjson@{myjson}}
+\doxysubsubsection{\texorpdfstring{Dump()}{Dump()}}
+{\footnotesize\ttfamily std\+::string myjson\+::\+Dump (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Dumps the JSON data to a string. 
+
+\begin{DoxyReturn}{Returns}
+A string representation of the JSON data. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmyjson_ae78ce5a9fab9c806c857d68fadf9019e}\label{classmyjson_ae78ce5a9fab9c806c857d68fadf9019e}} 
+\index{myjson@{myjson}!Execute@{Execute}}
+\index{Execute@{Execute}!myjson@{myjson}}
+\doxysubsubsection{\texorpdfstring{Execute()}{Execute()}}
+{\footnotesize\ttfamily void myjson\+::\+Execute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Executes a command specified in the JSON data. 
+
+Sorts restaraunts which are currently stored in JSON data by menu variants and rating. \mbox{\Hypertarget{classmyjson_af3b571f6109cd869fd7c528f09cb3ffe}\label{classmyjson_af3b571f6109cd869fd7c528f09cb3ffe}} 
+\index{myjson@{myjson}!FindRestaraunt@{FindRestaraunt}}
+\index{FindRestaraunt@{FindRestaraunt}!myjson@{myjson}}
+\doxysubsubsection{\texorpdfstring{FindRestaraunt()}{FindRestaraunt()}}
+{\footnotesize\ttfamily json myjson\+::\+Find\+Restaraunt (\begin{DoxyParamCaption}\item[{std\+::string}]{id }\end{DoxyParamCaption})}
+
+
+
+Finds the restaraunt with the specified id in the JSON data. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em id} & The id of the restaraunt to find. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A JSON object representing the restaraunt, or an empty object if the restaraunt is not found. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmyjson_a9fb2383909326e4d708ef7ccf6abcde0}\label{classmyjson_a9fb2383909326e4d708ef7ccf6abcde0}} 
+\index{myjson@{myjson}!Input@{Input}}
+\index{Input@{Input}!myjson@{myjson}}
+\doxysubsubsection{\texorpdfstring{Input()}{Input()}}
+{\footnotesize\ttfamily void myjson\+::\+Input (\begin{DoxyParamCaption}\item[{FILE $\ast$}]{fin }\end{DoxyParamCaption})}
+
+
+
+Reads input from the specified file stream into the JSON data. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em file} & The file stream containing the JSON data. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+inc/\mbox{\hyperlink{myjson_8h}{myjson.\+h}}\item 
+src/\mbox{\hyperlink{myjson_8cpp}{myjson.\+cpp}}\end{DoxyCompactItemize}

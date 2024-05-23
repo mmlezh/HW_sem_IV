@@ -1,0 +1,310 @@
+\hypertarget{task_8h}{}\doxysection{inc/task.h File Reference}
+\label{task_8h}\index{inc/task.h@{inc/task.h}}
+
+
+Main header file.  
+
+
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$nlohmann/json.\+hpp$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include \char`\"{}cpp-\/httplib-\/master/httplib.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}reg.\+h\char`\"{}}\newline
+Include dependency graph for task.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{task_8h__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structcompany}{company}}
+\begin{DoxyCompactList}\small\item\em The company struct represents a company. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{task_8h_ab701e3ac61a85b337ec5c1abaad6742d}\label{task_8h_ab701e3ac61a85b337ec5c1abaad6742d}} 
+using {\bfseries json} = nlohmann\+::json
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{task_8h_a9d7ef8bf5ea7049272f772c963a9e744}{Generate}} (int n)
+\begin{DoxyCompactList}\small\item\em Generates n company objects and writes it to Json file. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{structcompany}{company}} $>$ \mbox{\hyperlink{task_8h_a5ae291a49f819c42cdc2d1b2085bff1e}{input}} ()
+\begin{DoxyCompactList}\small\item\em Reads input from the specified file. \end{DoxyCompactList}\item 
+json \mbox{\hyperlink{task_8h_af8ba5033885ed67919fc87d09f756a74}{Execute}} (std\+::vector$<$ \mbox{\hyperlink{structcompany}{company}} $>$ companylist, int a, int b)
+\begin{DoxyCompactList}\small\item\em returns companies with certain finantial indicators. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{task_8h_a96cb23b4c3b5ae3dde581bea4d76bd86}{Delete}} (std\+::vector$<$ \mbox{\hyperlink{structcompany}{company}} $>$ companylist, std\+::string name)
+\begin{DoxyCompactList}\small\item\em Deletes company with given name. \end{DoxyCompactList}\item 
+json \mbox{\hyperlink{task_8h_ab31251492ba006132f5df7b1ffb8b6fe}{Print}} (std\+::vector$<$ \mbox{\hyperlink{structcompany}{company}} $>$ datares)
+\begin{DoxyCompactList}\small\item\em Prints json data. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{task_8h_a1a8fca4a21499d7bb7dfe4ce31e3ff9f}{Add}} (std\+::vector$<$ \mbox{\hyperlink{structcompany}{company}} $>$ companylist, std\+::string name)
+\begin{DoxyCompactList}\small\item\em Adds company with given name. \end{DoxyCompactList}\item 
+json \mbox{\hyperlink{task_8h_afb5b1c4f615c2c0c81e497c7a7088df1}{Find}} (std\+::vector$<$ \mbox{\hyperlink{structcompany}{company}} $>$ companylist, std\+::string id)
+\begin{DoxyCompactList}\small\item\em Finds company by given ID. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{task_8h_a6a81a6729ff20e64bf924d39d7a85037}{generate\+\_\+id}} (std\+::string name, int finances)
+\begin{DoxyCompactList}\small\item\em Generates ID for the company. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{task_8h_a92756b842b4a0ba912ac511f64af989d}{req\+\_\+generate}} (const httplib\+::\+Request \&, httplib\+::\+Response \&)
+\begin{DoxyCompactList}\small\item\em Helps server to interact with Genertate function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{task_8h_a08403b20645168e791f647b34f390701}{req\+\_\+print}} (const httplib\+::\+Request \&, httplib\+::\+Response \&)
+\begin{DoxyCompactList}\small\item\em Helps server to interact with Print function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{task_8h_acfb88f8782de7729cb82ffdb04292484}{req\+\_\+delete}} (const httplib\+::\+Request \&, httplib\+::\+Response \&)
+\begin{DoxyCompactList}\small\item\em Helps server to interact with Delete function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{task_8h_a548b87b55091cd4a0af880a14c93b6e3}{req\+\_\+add}} (const httplib\+::\+Request \&, httplib\+::\+Response \&)
+\begin{DoxyCompactList}\small\item\em Helps server to interact with Add function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{task_8h_aee8c26ab7fa8de4cc02386dd5997dbdd}{req\+\_\+execute}} (const httplib\+::\+Request \&, httplib\+::\+Response \&)
+\begin{DoxyCompactList}\small\item\em Helps server to interact with Execute function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{task_8h_a012061c820a6022021646e993c92b0de}{req\+\_\+find}} (const httplib\+::\+Request \&req, httplib\+::\+Response \&res)
+\begin{DoxyCompactList}\small\item\em Helps server to interact with Find function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Main header file. 
+
+These functions provide all interactions between server and JSON data in storage. 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{task_8h_a1a8fca4a21499d7bb7dfe4ce31e3ff9f}\label{task_8h_a1a8fca4a21499d7bb7dfe4ce31e3ff9f}} 
+\index{task.h@{task.h}!Add@{Add}}
+\index{Add@{Add}!task.h@{task.h}}
+\doxysubsubsection{\texorpdfstring{Add()}{Add()}}
+{\footnotesize\ttfamily void Add (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{structcompany}{company}} $>$}]{companylist,  }\item[{std\+::string}]{name }\end{DoxyParamCaption})}
+
+
+
+Adds company with given name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em companylist} & The list of companies. \\
+\hline
+{\em name} & The name of company to delete. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{task_8h_a96cb23b4c3b5ae3dde581bea4d76bd86}\label{task_8h_a96cb23b4c3b5ae3dde581bea4d76bd86}} 
+\index{task.h@{task.h}!Delete@{Delete}}
+\index{Delete@{Delete}!task.h@{task.h}}
+\doxysubsubsection{\texorpdfstring{Delete()}{Delete()}}
+{\footnotesize\ttfamily void Delete (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{structcompany}{company}} $>$}]{companylist,  }\item[{std\+::string}]{name }\end{DoxyParamCaption})}
+
+
+
+Deletes company with given name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em companylist} & The list of companies. \\
+\hline
+{\em name} & The name of company to delete. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{task_8h_af8ba5033885ed67919fc87d09f756a74}\label{task_8h_af8ba5033885ed67919fc87d09f756a74}} 
+\index{task.h@{task.h}!Execute@{Execute}}
+\index{Execute@{Execute}!task.h@{task.h}}
+\doxysubsubsection{\texorpdfstring{Execute()}{Execute()}}
+{\footnotesize\ttfamily json Execute (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{structcompany}{company}} $>$}]{companylist,  }\item[{int}]{a,  }\item[{int}]{b }\end{DoxyParamCaption})}
+
+
+
+returns companies with certain finantial indicators. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em companylist} & The list of companies. \\
+\hline
+{\em a} & The low line of finantial indicators. \\
+\hline
+{\em b} & The high line of finantial indicators. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+json object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{task_8h_afb5b1c4f615c2c0c81e497c7a7088df1}\label{task_8h_afb5b1c4f615c2c0c81e497c7a7088df1}} 
+\index{task.h@{task.h}!Find@{Find}}
+\index{Find@{Find}!task.h@{task.h}}
+\doxysubsubsection{\texorpdfstring{Find()}{Find()}}
+{\footnotesize\ttfamily json Find (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{structcompany}{company}} $>$}]{companylist,  }\item[{std\+::string}]{id }\end{DoxyParamCaption})}
+
+
+
+Finds company by given ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em companylist} & The list of companies. \\
+\hline
+{\em id} & The id of company to find. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+json object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{task_8h_a9d7ef8bf5ea7049272f772c963a9e744}\label{task_8h_a9d7ef8bf5ea7049272f772c963a9e744}} 
+\index{task.h@{task.h}!Generate@{Generate}}
+\index{Generate@{Generate}!task.h@{task.h}}
+\doxysubsubsection{\texorpdfstring{Generate()}{Generate()}}
+{\footnotesize\ttfamily void Generate (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Generates n company objects and writes it to Json file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & the amount of objects to create. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{task_8h_a6a81a6729ff20e64bf924d39d7a85037}\label{task_8h_a6a81a6729ff20e64bf924d39d7a85037}} 
+\index{task.h@{task.h}!generate\_id@{generate\_id}}
+\index{generate\_id@{generate\_id}!task.h@{task.h}}
+\doxysubsubsection{\texorpdfstring{generate\_id()}{generate\_id()}}
+{\footnotesize\ttfamily std\+::string generate\+\_\+id (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{int}]{finances }\end{DoxyParamCaption})}
+
+
+
+Generates ID for the company. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of company. \\
+\hline
+{\em finances} & The finantial indicators of company. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{task_8h_a5ae291a49f819c42cdc2d1b2085bff1e}\label{task_8h_a5ae291a49f819c42cdc2d1b2085bff1e}} 
+\index{task.h@{task.h}!input@{input}}
+\index{input@{input}!task.h@{task.h}}
+\doxysubsubsection{\texorpdfstring{input()}{input()}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{structcompany}{company}}$>$ input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Reads input from the specified file. 
+
+\begin{DoxyReturn}{Returns}
+a vector of company objects. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{task_8h_ab31251492ba006132f5df7b1ffb8b6fe}\label{task_8h_ab31251492ba006132f5df7b1ffb8b6fe}} 
+\index{task.h@{task.h}!Print@{Print}}
+\index{Print@{Print}!task.h@{task.h}}
+\doxysubsubsection{\texorpdfstring{Print()}{Print()}}
+{\footnotesize\ttfamily json Print (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{structcompany}{company}} $>$}]{datares }\end{DoxyParamCaption})}
+
+
+
+Prints json data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em companylist} & The list of companies. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+json object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{task_8h_a548b87b55091cd4a0af880a14c93b6e3}\label{task_8h_a548b87b55091cd4a0af880a14c93b6e3}} 
+\index{task.h@{task.h}!req\_add@{req\_add}}
+\index{req\_add@{req\_add}!task.h@{task.h}}
+\doxysubsubsection{\texorpdfstring{req\_add()}{req\_add()}}
+{\footnotesize\ttfamily void req\+\_\+add (\begin{DoxyParamCaption}\item[{const httplib\+::\+Request \&}]{,  }\item[{httplib\+::\+Response \&}]{ }\end{DoxyParamCaption})}
+
+
+
+Helps server to interact with Add function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & Object representing the user request \\
+\hline
+{\em response} & Object to be sent back as the response to the user \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{task_8h_acfb88f8782de7729cb82ffdb04292484}\label{task_8h_acfb88f8782de7729cb82ffdb04292484}} 
+\index{task.h@{task.h}!req\_delete@{req\_delete}}
+\index{req\_delete@{req\_delete}!task.h@{task.h}}
+\doxysubsubsection{\texorpdfstring{req\_delete()}{req\_delete()}}
+{\footnotesize\ttfamily void req\+\_\+delete (\begin{DoxyParamCaption}\item[{const httplib\+::\+Request \&}]{,  }\item[{httplib\+::\+Response \&}]{ }\end{DoxyParamCaption})}
+
+
+
+Helps server to interact with Delete function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & Object representing the user request \\
+\hline
+{\em response} & Object to be sent back as the response to the user \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{task_8h_aee8c26ab7fa8de4cc02386dd5997dbdd}\label{task_8h_aee8c26ab7fa8de4cc02386dd5997dbdd}} 
+\index{task.h@{task.h}!req\_execute@{req\_execute}}
+\index{req\_execute@{req\_execute}!task.h@{task.h}}
+\doxysubsubsection{\texorpdfstring{req\_execute()}{req\_execute()}}
+{\footnotesize\ttfamily void req\+\_\+execute (\begin{DoxyParamCaption}\item[{const httplib\+::\+Request \&}]{,  }\item[{httplib\+::\+Response \&}]{ }\end{DoxyParamCaption})}
+
+
+
+Helps server to interact with Execute function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & Object representing the user request \\
+\hline
+{\em response} & Object to be sent back as the response to the user \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{task_8h_a012061c820a6022021646e993c92b0de}\label{task_8h_a012061c820a6022021646e993c92b0de}} 
+\index{task.h@{task.h}!req\_find@{req\_find}}
+\index{req\_find@{req\_find}!task.h@{task.h}}
+\doxysubsubsection{\texorpdfstring{req\_find()}{req\_find()}}
+{\footnotesize\ttfamily void req\+\_\+find (\begin{DoxyParamCaption}\item[{const httplib\+::\+Request \&}]{req,  }\item[{httplib\+::\+Response \&}]{res }\end{DoxyParamCaption})}
+
+
+
+Helps server to interact with Find function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & Object representing the user request \\
+\hline
+{\em response} & Object to be sent back as the response to the user \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{task_8h_a92756b842b4a0ba912ac511f64af989d}\label{task_8h_a92756b842b4a0ba912ac511f64af989d}} 
+\index{task.h@{task.h}!req\_generate@{req\_generate}}
+\index{req\_generate@{req\_generate}!task.h@{task.h}}
+\doxysubsubsection{\texorpdfstring{req\_generate()}{req\_generate()}}
+{\footnotesize\ttfamily void req\+\_\+generate (\begin{DoxyParamCaption}\item[{const httplib\+::\+Request \&}]{,  }\item[{httplib\+::\+Response \&}]{ }\end{DoxyParamCaption})}
+
+
+
+Helps server to interact with Genertate function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & Object representing the user request \\
+\hline
+{\em response} & Object to be sent back as the response to the user \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{task_8h_a08403b20645168e791f647b34f390701}\label{task_8h_a08403b20645168e791f647b34f390701}} 
+\index{task.h@{task.h}!req\_print@{req\_print}}
+\index{req\_print@{req\_print}!task.h@{task.h}}
+\doxysubsubsection{\texorpdfstring{req\_print()}{req\_print()}}
+{\footnotesize\ttfamily void req\+\_\+print (\begin{DoxyParamCaption}\item[{const httplib\+::\+Request \&}]{,  }\item[{httplib\+::\+Response \&}]{ }\end{DoxyParamCaption})}
+
+
+
+Helps server to interact with Print function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & Object representing the user request \\
+\hline
+{\em response} & Object to be sent back as the response to the user \\
+\hline
+\end{DoxyParams}

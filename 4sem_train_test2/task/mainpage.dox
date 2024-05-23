@@ -1,0 +1,17 @@
+/**
+ * @mainpage Restaraunt JSON Documentation
+ *
+ * @section intro_sec Introdution
+ * Welcome to the documentation of Restaraunt JSON project.
+ *
+ * @section classes_sec List of classes
+ *
+ * Here is a list of classes in this project :
+ * -# \ref Restaraunt
+ * -# \ref myjson
+ * -# \ref Generator
+ * -# \ref Hash
+ * -# \ref reg
+ *
+ *
+ */
